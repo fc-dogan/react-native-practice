@@ -1,6 +1,5 @@
 import React from "react";
 import { Text, StyleSheet, TouchableOpacity, View, Button} from "react-native"
-import ListScreen from './ListScreen';
 
 const HomeScreen = ({ navigation }) => {
   // console.log(props.navigation);
@@ -22,6 +21,10 @@ const HomeScreen = ({ navigation }) => {
       <Button 
         onPress={ () => navigation.navigate('Counter') } 
         title='Go to counter demo'
+      />
+      <Button 
+        onPress={ () => navigation.navigate('Color') } 
+        title='Go to Color demo'
       />
     </View>
   ) 
