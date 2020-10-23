@@ -1,12 +1,12 @@
 import React from 'react'
 import { Text, StyleSheet, View, Button} from "react-native"
 
-function ColorCounter() {
+function ColorCounter({ color, onIncrease, onDecrease }) {
   return (
     <View>
-      <Text>Red</Text>
-      <Button title='Increase Red'/>
-      <Button title='Decrease Red'/>
+      <Text>{color}</Text>
+      <Button title={`Increase ${color}`} onPress={()=> onIncrease() }/>
+      <Button title={`Decrease ${color}`} onPress={()=> onDecrease() }/>
     </View>
   )
 }
