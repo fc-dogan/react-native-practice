@@ -1,16 +1,14 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native'
-import ImageDetail from '../components/ImageDetail'
 
-const ImageScreen = () => {
+const ImageDetail = () => {
   return (
     <View>
-      <Text> Image Screen</Text>
-      
+      <Text> Image Detail</Text>
     </View>
   )
 }
 
 const styles = StyleSheet.create({})
 
-export default ImageScreen
+export default ImageDetail
